@@ -8,11 +8,12 @@ WARNING: This project is under active development, so steps tend to change
 == Building Envoy Binary CentOS6.4
 NOTE: Tested on CentOS 6.4
 
-* Update system gcc to version 4.9.2
+NOTE: The provided repo's base url has been updated for Chinese users for a better speed.
 
-.. Delete all repos under /etc/yum.repo.d/ directory. replace with original link:/CentOS-Base.repo[repo]
-.. update system gcc with the following steps
- [source shell]
+* Update system gcc to version 4.9.2
+** Delete all repos under /etc/yum.repo.d/ directory. replace with original link:/CentOS-Base.repo[repo]
+** update system gcc with the following steps
+[source shell]
 ----
    cd /etc/pki/rpm-gpg
    wget http://linuxsoft.cern.ch/cern/scl/RPM-GPG-KEY-cern
@@ -26,7 +27,7 @@ NOTE: Tested on CentOS 6.4
    source /opt/rh/devtoolset-3/enable
    gcc -v
 ----
-* Then follow the bellowing steps under CentOS7
+* Then follow the steps under CentOS7
 
 == Building Envoy Binary CentOS7
 
