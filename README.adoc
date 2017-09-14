@@ -4,7 +4,6 @@ The docker image for https://github.com/lyft/envoy[envoy] based on centos7.
 
 WARNING: This project is under active development, so steps tend to change
 
-[[build-envoy-binary]]
 == Building Envoy Binary CentOS6.4
 NOTE: Tested on CentOS 6.4
 
@@ -29,6 +28,7 @@ NOTE: The provided repo's base url has been updated for Chinese users for a bett
 ----
 * Then follow the steps under CentOS7
 
+[[build-envoy-binary]]
 == Building Envoy Binary CentOS7
 
 The envoy binary is built using the accompanying Vagrantfile and the scripts available as part of the scripts directory. The Vagrant up command will provision a Centos7 machine with required tools and libraries to build envoy. The envoy build setup has been divided into two steps for convinence,
