@@ -15,3 +15,11 @@ yum -y remove  git
 
 # Directory that will have envoy tools
 mkdir -p /opt/envoy_env
+
+cd /opt/envoy_env
+unzip ./install_files/git-2.10.1.zip
+cd git-2.10.1
+make configure
+./configure --prefix=/usr/local/git-2.10.1
+make all
+make install
